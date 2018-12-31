@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Album</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+<!--<script src="https://use.fontawesome.com/8c4df4e53f.js"></script>-->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+</script>
+
+
+<header>
+    <div id="pageTitle"><h2><i class="fas fa-music"></i> <span id="headertitle">Doug Mars Music List</span> <i class="fas fa-music"></i></h2></div>
+    <div id="links">
+        <div id="searchAlbum" class="btn btnHover"><i class="fas fa-search"></i> SEARCH</div>
+        <div id="addAlbum" class="btn btnDisabled"><i class="fas fa-plus-circle"></i> ADD</div>
+    </div>
+</header>
+<main>
+    <form id="addAlbumForm">
+        <div></div>
+        <h3>Add a New Album to My List</h3>
+        <div class="rightAlign"><label for="albumName">Album Name: </label></div>
+        <div><input value="" class="formTextField" type="text" name="albumName" id="albumName">
+            <span class="errorMessage" id="albumNameMessage"></span>
+        </div>
+
+        <div class="rightAlign"><label for="artist">Artist: </label></div>
+        <div><input value="" class="formTextField" type="text" name="artist" id="artist">
+            <span class="errorMessage" id="artistMessage"></span>
+        </div>
+
+        <div class="rightAlign"><label for="company">Company Label: </label></div>
+        <div><input value="" class="formTextField" type="text" name="company" id="company" size="50">
+            <span class="errorMessage" id="companyMessage"></span>
+        </div>
+
+        <div class="rightAlign"><label for="conditionSelect">Condition: </label></div>
+        <div>
+            <select name="condition" id="conditionSelect">
+                <option class="options" value="" disabled selected> -- select a condition -- </option>
+                <option class="options" value="VP">Very Poor</option>
+                <option class="options" value="P">Poor</option>
+                <option class="options" value="G">Good</option>
+                <option class="options" value="VG">Very Good</option>
+                <option class="options" value="M">Mint</option>
+            </select>
+            <span class="errorMessage" id="conditionSelectMessage"></span>
+        </div>
+
+        <div class="rightAlign"><label for="genreSelect">Music Genre: </label></div>
+        <div>
+            <select name="genreSelect" id="genreSelect">
+            </select>
+            <span class="errorMessage" id="genreSelectMessage"></span>
+        </div>
+
+        <div class="rightAlign"><label for="year">Year: </label></div>
+        <div><input value="" class="formTextField" placeholder="YYYY" type="text" name="year" id="year">
+            <span class="errorMessage" id="yearMessage"></span>
+        </div>
+
+        <div class="rightAlign"><label for="price">Price $:</label></div>
+        <div><input value=""  placeholder="00.00" class="formTextField" type="text" name="price" id="price">
+            <span class="errorMessage" id="priceMessage"></span>
+        </div>
+
+        <div></div>
+        <div><h3 id="successMessage">Success! Album added.</h3><input class="btn btnHover" type="submit" value="ADD ALBUM" id="btnSubmit"></div>
+        <div></div>
+        <div><h5>*** All fields are mandatory. ***</h5></div>
+    </form>
+
+</main>
+
+
+<footer>
+    <div><h4>All rights reserved. Doug Mars -  Fall 2018.</h4></div>
+</footer>
+<script src="./js/formatGenre.js"></script>
+<script src="./js/add.js"></script>
+</body>
+</html>

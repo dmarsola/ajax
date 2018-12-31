@@ -1,0 +1,241 @@
+/*4. The application must be responsive at the bootstrap breakpoints which are: >=768px, and >=1200px */
+/*(you do NOT have to do the other ones but you may). That is, the page must adjust at each of those breakpoints. */
+/*You do NOT have to use bootstrap.*/
+
+/*https://coolors.co/fff7f4-fceded-f2c078-2f2f2f-e83151*/
+/*#fff7f4 - FLORAL WHITE*/
+/*#fceded - SEASHELL*/
+/*#f2c078 - MELLOW APRICOT*/
+/*#2f2f2f - JET*/
+/*#e83151 - AMARANTH*/
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Sanchez:400,400i|Spirax&subset=latin-ext');*/
+@import url('https://fonts.googleapis.com/css?family=Tangerine|Raleway');
+
+.desktop, .btnDisabled { display: none; }
+.mobile { display: block; }
+
+html {
+    background-color: #FFF7F4;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 95%;
+    margin: auto;
+    color: #2F2F2F;
+    /*font-family: 'Spirax', cursive;*/
+}
+
+.formTextField {
+    width: 98%;
+    height: 1.5em;
+}
+
+header, footer, #placeholder {
+    text-align: center;
+}
+
+header, footer, main {
+    padding: .5em;
+    width: 90%;
+    border: 1px solid #e83151;
+    border-radius: 5px;
+    margin-top: 1em;
+    background-color: #fceded;
+}
+
+#pageTitle {
+    padding: 1.5em .5em;
+    font-family: 'Tangerine', cursive;
+    text-shadow: 2px 2px #2F2F2F;
+    color: #FFF7F4;
+    background-color: #E83151;
+    border-radius: 5px;
+}
+#headertitle {
+    padding: 2em .5em;
+}
+
+select{
+    width: 100%;
+    height: 3em;
+    background-color: #fceded;
+    border-radius: 5px;
+    border: 2px solid #E83151;
+    text-align: center;
+}
+
+.btn{
+    min-width: 10em;
+    padding: .5em 2em;
+    margin: .5em;
+    border-radius: 5px;
+    color: #fff7f4;
+    background-color: #e83151;
+    border: 1px solid #e83151;
+}
+
+.btnHover:hover{
+    color: #e83151;
+    background-color: #FFF7F4;
+    border: 1px solid #E83151;
+    cursor: pointer;
+}
+
+.btnDisabled {
+    /*border: 1px solid #F0B67F;*/
+    background-color: #fceded;
+}
+
+
+#grid {
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: .3em;
+}
+
+#grid i{
+    text-align: center;
+    padding: .2em 1em;
+    width: 1.2em;
+    margin: auto;
+}
+
+#addAlbumForm{
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #FFF7F4;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: .3em;
+    width: 90%;
+    margin: 2em auto
+}
+
+/*#addAlbumForm{*/
+    /*width: 70%;*/
+    /*margin: 2em auto;*/
+/*}*/
+
+.title{
+    font-size: 1.2em;
+    color: #E83151;
+}
+
+.errorMessage {
+    color: #E83151;
+    display: none;
+}
+
+
+#successMessage{
+    display: none;
+    text-align: center;
+    padding: 1em;
+    background-color: #5ABC1E;
+
+}
+
+
+
+
+
+    /*              Desktop                */
+
+
+
+
+
+    @media all and (min-width: 768px) {
+        .mobile { display: none; }
+        .desktop { display: block; }
+        .btnDisabled { display: inline-block; }
+
+        .rightAlign {
+            text-align: right;
+        }
+
+        body{
+            width: 85%;
+            margin: auto;
+        }
+
+        #pageTitle {
+            font-size: 1.5em;
+            background-color: #E83151;
+            padding: .3em 0;
+            margin: .5em 0;
+            border-radius: 10px;
+        }
+
+        #headertitle {
+            font-size: 1.2em;
+        }
+
+        #addAlbum, #searchAlbum{
+            max-width: 20%;
+            margin: auto;
+        }
+        #links {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 1em;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: .5em;
+        }
+        #grid i{
+            padding: 0 .5em;
+            padding: 0 .5em;
+            margin: auto;
+        }
+        .title{
+            font-size: 1em;
+        }
+
+        #addAlbumForm{
+            width: 70%;
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: .5em;
+        }
+
+        #btnSubmit {
+            width: 15em;
+            margin-left: -0.1em;
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+    /*              Larger Desktop                */
+
+
+
+
+
+    @media all and (min-width: 1200px) {
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1em;
+        }
+        #addAlbumForm {
+            width: 60%;
+        }
+    }

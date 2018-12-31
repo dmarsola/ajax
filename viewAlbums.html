@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Album Finder</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+</head>
+<body>
+<!--<script src="https://use.fontawesome.com/8c4df4e53f.js"></script>-->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+</script>
+
+
+<header>
+    <div id="pageTitle"><h2><i class="fas fa-music"></i> <span id="headertitle">Doug Mars Music List</span> <i class="fas fa-music"></i></h2></div>
+    <div id="links">
+        <div id="searchAlbum" class="btn btnDisabled"><i class="fas fa-search"></i> SEARCH</div>
+        <div id="addAlbum" class="btn btnHover"><i class="fas fa-plus-circle"></i> ADD</div>
+    </div>
+</header>
+
+
+<main>
+    <form id="genreSelectForm">
+        <select name="genreSelect" id="genreSelect">
+            <option class="options" value=""> -- select a genre -- </option>
+            <option class="options" value="">One</option>
+            <option class="options" value="">Two</option>
+            <option class="options" value="">Three</option>
+            <option class="options" value="">Four</option>
+        </select>
+    </form>
+
+    <div id="placeholder">
+        <h2><i class="fas fa-arrow-up"></i> Select an option <i class="fas fa-arrow-up"></i></h2>
+    </div>
+    <div id="grid">
+        <!--<div>-->
+            <!--<p><i class="fas fa-compact-disc"></i> Album Name<br />-->
+            <!--<i class="fas fa-users"></i> Artist Name<br />-->
+            <!--<i class="fas fa-building"></i> Company Name<br />-->
+            <!--<i class="fas fa-certificate"></i> Conservation<br />-->
+            <!--<i class="far fa-calendar-alt"></i> 2018<br />-->
+            <!--<i class="fas fa-dollar-sign"></i> 15.20</p>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<p><i class="fas fa-compact-disc"></i> Album Name<br />-->
+                <!--<i class="fas fa-users"></i> Artist Name<br />-->
+                <!--<i class="fas fa-building"></i> Company Name<br />-->
+                <!--<i class="fas fa-certificate"></i> Conservation<br />-->
+                <!--<i class="far fa-calendar-alt"></i> 2018<br />-->
+                <!--<i class="fas fa-dollar-sign"></i> 15.20</p>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<p><i class="fas fa-compact-disc"></i> Album Name<br />-->
+                <!--<i class="fas fa-users"></i> Artist Name<br />-->
+                <!--<i class="fas fa-building"></i> Company Name<br />-->
+                <!--<i class="fas fa-certificate"></i> Conservation<br />-->
+                <!--<i class="far fa-calendar-alt"></i> 2018<br />-->
+                <!--<i class="fas fa-dollar-sign"></i> 15.20</p>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<p><i class="fas fa-compact-disc"></i> Album Name<br />-->
+                <!--<i class="fas fa-users"></i> Artist Name<br />-->
+                <!--<i class="fas fa-building"></i> Company Name<br />-->
+                <!--<i class="fas fa-certificate"></i> Conservation<br />-->
+                <!--<i class="far fa-calendar-alt"></i> 2018<br />-->
+                <!--<i class="fas fa-dollar-sign"></i> 15.20</p>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<p><i class="fas fa-compact-disc"></i> Album Name<br />-->
+                <!--<i class="fas fa-users"></i> Artist Name<br />-->
+                <!--<i class="fas fa-building"></i> Company Name<br />-->
+                <!--<i class="fas fa-certificate"></i> Conservation<br />-->
+                <!--<i class="far fa-calendar-alt"></i> 2018<br />-->
+                <!--<i class="fas fa-dollar-sign"></i> 15.20</p>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<p><i class="fas fa-compact-disc"></i> Album Name<br />-->
+                <!--<i class="fas fa-users"></i> Artist Name<br />-->
+                <!--<i class="fas fa-building"></i> Company Name<br />-->
+                <!--<i class="fas fa-certificate"></i> Conservation<br />-->
+                <!--<i class="far fa-calendar-alt"></i> 2018<br />-->
+                <!--<i class="fas fa-dollar-sign"></i> 15.20</p>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<p><i class="fas fa-compact-disc"></i> Album Name<br />-->
+                <!--<i class="fas fa-users"></i> Artist Name<br />-->
+                <!--<i class="fas fa-building"></i> Company Name<br />-->
+                <!--<i class="fas fa-certificate"></i> Conservation<br />-->
+                <!--<i class="far fa-calendar-alt"></i> 2018<br />-->
+                <!--<i class="fas fa-dollar-sign"></i> 15.20</p>-->
+        <!--</div>-->
+    </div> <!-- Grid -->
+
+</main>
+
+<footer>
+    <div><h4>All rights reserved. Doug Mars -  Fall 2018.</h4></div>
+</footer>
+
+<script src="./js/formatGenre.js"></script>
+<script src="./js/list.js"></script>
+</body>
+</html>
