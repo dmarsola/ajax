@@ -2,7 +2,7 @@ $(()=>{
     function $$(id){ return document.getElementById(id); }
 
     $('#searchAlbum').on('click', (el)=>{
-        $(location).attr('href', './viewAlbums.html');
+        $(location).attr('href', './index.html');
     });
 
     $.get("./php/files/genres.txt", (result)=>{
@@ -139,6 +139,3 @@ $(()=>{
         }
     }); // Form submit function
 });
-
-
-
