@@ -36,13 +36,17 @@ $(()=>{
         priceMessage.hide();
     }
 
+    function cleanStr(str){
+        return str.replace(/</g, "").replace(/>/g, "")
+    }
+
     $("#addAlbumForm").submit(function(e){
         e.preventDefault();
         hideAllWarnings();
         let validated = true;
-        let albumName = ($$('albumName').value).trim();
-        let artist = ($$('artist').value).trim();
-        let company = ($$('company').value).trim();
+        let albumName = cleanStr(($$('albumName').value).trim());
+        let artist = cleanStr(($$('artist').value).trim());
+        let company = cleanStr(($$('company').value).trim());
         let selectedCondition = $$('conditionSelect').selectedIndex;
         let condition = $$('conditionSelect').options[selectedCondition].value;
         let selectedGenre = $$('genreSelect').selectedIndex;

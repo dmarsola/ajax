@@ -31,7 +31,7 @@ $(()=>{
 
     $.get("./php/files/genres.txt", (result)=>{
         // console.log(result);
-        let genres = result.split("\r\n");
+        let genres = result.split("\n");
         formatDropMenu(genres);
     });
 
@@ -71,7 +71,7 @@ $(()=>{
                         alert(`Error. Contact administrator. Message: ${err.statusText}`)
                     }
                 });
-            setTimeout(genreUpdate, 10000);
+            setTimeout(genreUpdate, 30000);
             } else {
                 clearTimeout(genreUpdate);
                 $("#placeholder").show();

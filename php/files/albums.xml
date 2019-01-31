@@ -452,4 +452,4 @@
 		<year>1977</year>
 		<price>$23.00</price>
 	</album>
-<album genre="1"><albumName>2</albumName><artist>3</artist><company>4</company><condition>5</condition><year>6</year><price>q</price></album><album genre="Country"><albumName>a</albumName><artist>b</artist><company>c</company><condition>VP</condition><year>1111</year><price>$11.11</price></album><album genre="Country"><albumName>a</albumName><artist>b</artist><company>c</company><condition>VP</condition><year>1111</year><price>$1,111.00</price></album></albums>
+</albums>
